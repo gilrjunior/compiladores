@@ -1,6 +1,10 @@
-program Fibonacci;
+program repete;
 var
-x, y, z : integer;
-w, k : integer;
+    c: integer;
 begin
+    c := 1;
+    repeat
+        write(c);
+        c := c + 1;
+    until (c > 10);
 end.

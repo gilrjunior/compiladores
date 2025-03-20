@@ -171,11 +171,11 @@ public class Lexico {
             else if (caractere == '<'){
                 lexema += caractere;
                 caractere = next_caractere();
-                token = new Token(line, column, TokenClass.LesserThan);
+                token = new Token(line, column, TokenClass.LessThan);
                 if(caractere == '='){
                     lexema += caractere;
                     caractere = next_caractere();
-                    token.setTokenClass(TokenClass.LesserThanOrEqual);
+                    token.setTokenClass(TokenClass.LessThanOrEqual);
                 } else if(caractere == '>'){
                     lexema += caractere;
                     caractere = next_caractere();
